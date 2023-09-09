@@ -1,0 +1,15 @@
+.herbs-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+
+.txt-herb{
+    margin-top: 30PX;
+    margin-bottom: 30px;
+    text-align: center;
+}

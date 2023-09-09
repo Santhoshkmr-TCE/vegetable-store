@@ -1,0 +1,66 @@
+body{
+    background-color: #FAF3F0;
+}
+.txt{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.vege-row{
+    display: flex;
+}
+.name-row{
+    display: flex;
+}
+.onion-img{
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 200px;
+    border: 5px solid #555;
+}
+.carrot-img{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 200px;
+    border: 5px solid #555;
+}
+.tomato-img{
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 150px;
+    width: 200px;
+    border: 5px solid #555;
+}
+.oni-txt{
+    
+    margin-left: 350px;
+}
+.carr-txt{
+    margin-left: 100px;
+}
+.toma-txt{
+    margin-left: 100px;   
+}
+button{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    
+}
+
+.inp{
+    height: 30px;
+    width: 90px; 
+    color: #212529;
+    border: solid #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    
+    
+    
+}

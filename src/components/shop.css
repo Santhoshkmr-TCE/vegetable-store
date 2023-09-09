@@ -1,0 +1,34 @@
+.shop-heading{
+    display: flex;
+    margin-top: 20px;
+    height: 400px;
+    background-color: #A8DF8E;
+}
+.fruitsveg-img{
+
+    margin-top: 10px;
+    margin-bottom: 10px;;
+    margin-left: 750px;
+    width: 490px;
+
+}
+.text-shop{
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 150px;
+    font-style: bold;
+    font-size: 50px;
+
+    transform: rotate(0px)
+             skew(0px);
+}
+.text-shop1{
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 220px;
+    font-style: bold;
+    font-size: 50px;
+
+    transform: rotate(0px)
+             skew(0px);
+}

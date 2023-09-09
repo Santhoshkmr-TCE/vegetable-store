@@ -1,0 +1,34 @@
+.display-obj{
+    background-color: #FAF3F0;
+}
+.fruits-veg{
+    margin-top: 50px;
+}
+.fru-veg-box{
+    display: flex;
+}
+.fruit-img{
+    margin-left: 265px;
+    width: 220px;
+    height: 170px;
+    border: 5px solid #555;
+}
+
+.vege-img{
+
+    margin-left: 150px;
+    height: 170px;
+    width: 220px;
+    border: 5px solid #555;
+}
+.herbs-img{
+    margin-left: 150px;
+    height: 170px;
+    width: 220px;
+    border: 5px solid #555;
+}
+.ju{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
