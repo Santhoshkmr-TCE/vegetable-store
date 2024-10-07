@@ -27,6 +27,9 @@ input:focus{
 }
 .cart-img{
     width: 50px;
-    margin-left: 350px;
+    margin-left: 100px;
     margin-top: 5px;
+}
+.bar{
+    margin-left: 900px;
 }

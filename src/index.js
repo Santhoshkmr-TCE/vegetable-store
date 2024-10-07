@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Vegetable from'./components/vegetable';
 import Herbs from './components/herbs';
 import Fruits from './components/fruits';
+import Form from './components/form';
+
 import Cart from './components/cart';
 import {
   createBrowserRouter,
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "herbs",
     element: <Herbs />,
+  },
+  {
+    path: "form",
+    element: <Form  />,
   },
   
 ]);

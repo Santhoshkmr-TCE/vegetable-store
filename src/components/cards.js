@@ -1,6 +1,11 @@
-import React from "react";
+
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+
 
 function Cards ({ item,handleclick}){
+    
+
     const { id , title, price, img } = item;
     return (
         <div className="cards">

@@ -35,7 +35,10 @@ function Fruits() {
     }
 
     return (
+        
         <div>
+            
+            
             <Search size={cart.length} setShow={setShow} />
             {show ? <Amazon handleclick={handleclick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />}
             

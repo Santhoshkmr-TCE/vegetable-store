@@ -3,32 +3,42 @@ import list from './data2';
 import Cards from './cards'
 import Search from "./search";
 import './fruits.css';
+import Amazon from './amazon';
+import Cart from "./cart";
+
 
 
 function Herbs (){
     const [show,setShow] = useState(true);
     const [cart , setCart] = useState([]);
-    const handleclick = (item)=>{
+    const handleclick = (item) => {
         let isPresent = false;
-        cart.forEach((product)=>{
+        cart.forEach((product) => {
             if (item.id === product.id)
-            isPresent = true;
-        })
-        if (isPresent){
-            return ;
+                isPresent = true;
+        });
+        if (!isPresent) {
+            setCart([...cart, { ...item, amount: 1 }]);
         }
-        setCart([...cart, item]);
+    }
+
+    const handleChange = (item, d) => {
+        const updatedCart = cart.map((cartItem) => {
+            if (cartItem.id === item.id) {
+                const newAmount = cartItem.amount + d;
+                // Ensure that the amount is at least 1.
+                cartItem.amount = newAmount >= 1 ? newAmount : 1;
+            }
+            return cartItem;
+        });
+
+        setCart(updatedCart);
     }
     
     return(
         <div>
-            <Search size={cart.length}/>
-            <h3 style={{textAlign:"center",marginTop:50,fontSize:50 }}>Fruits</h3>
-        <section>
-            {list.map((item) =>(
-                <Cards key={list.id} item={item} handleclick={handleclick} />
-            ))}
-        </section>
+            <Search size={cart.length} setShow={setShow} />
+            {show ? <Amazon handleclick={handleclick} /> : <Cart cart={cart} setCart={setCart} handleChange={handleChange} />}
         </div>
     )
 }
